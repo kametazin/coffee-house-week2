@@ -82,3 +82,45 @@ main{
     color: var(--text-accent);
     font-style: italic;
 }
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+.slides{
+    display: flex;
+    width: 1152px;
+    flex-direction: column;
+    align-items: center;
+}
+.slides h3{
+    margin-bottom: 0;
+}
+.slides p{
+    color: var(--text-dark);
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.slides span{
+    align-self: stretch;
+    color: var(--text-dark);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    margin-bottom: 40px;
+}
+.slides div{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.control{
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background: var(--border-light);
+}
