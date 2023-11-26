@@ -162,23 +162,45 @@ main{
     background: url(/img/about-1.png),  lightgray 50% / cover no-repeat;
     flex-shrink: 0;
     grid-area: upleft;
+    background-position: center;
+    background-size: 110%;
+    transition: background-size 500ms ease-in-out;
 }
+.img1:hover{
+    background-size: 100%;
+ }
 .img2{
     height: 430px;
     background: url(/img/about-2.png), lightgray 50% / cover no-repeat;
     grid-area: downleft;
     margin-top: 40px;
+    background-position: center;
+    background-size: 110%;
+    transition: background-size 500ms ease-in-out;
 }
+.img2:hover{
+    background-size: 100%;
+ }
 .img3{
     height: 430px;
     background: url(/img/about-3.png), lightgray 50% / cover no-repeat;
     grid-area: upright;
+    background-position: center;
+    background-size: 110%;
+    transition: background-size 500ms ease-in-out;
 }
+.img3:hover{
+    background-size: 100%;
+ }
 .img4{
     background: url(/img/about-4.png), lightgray 50% / cover no-repeat;
     height: 590px;
-    justify-content: center;
-    align-items: center;
     grid-area: downright;
     margin-top: -120px;
+    background-position: center;
+    background-size: 110%;
+    transition: background-size 500ms ease-in-out;
 }
+.img4:hover{
+    background-size: 100%;
+ }
