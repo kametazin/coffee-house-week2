@@ -236,14 +236,14 @@ main{
     transition: color 500ms ease-in-out;
     transition: background-color 500ms ease-in-out;
  }
- .buttons:hover button{
+ .buttons button:hover{
     background-color: var(--background-container);
     color: var(--text-light);
 }
 .buttons button > svg > path{
     transition: fill 500ms ease-in-out;
 }
-.buttons:hover button > svg > path{
+.buttons button:hover > svg > path{
     fill: var(--text-light);
 }
  .btn-txt{
@@ -261,3 +261,7 @@ main{
  button > svg{
     float: left;
  }
+.mobile-screens img{
+    width: 630px;
+    height: 630px;
+}
