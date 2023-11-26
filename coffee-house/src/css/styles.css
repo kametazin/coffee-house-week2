@@ -124,3 +124,36 @@ main{
     border-radius: 100px;
     background: var(--border-light);
 }
+.control-active{
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background: var(--border-dark);
+}
+.about h2{
+    align-self: stretch;
+    color: var(--text-dark);
+    line-height: 125%;
+}
+.about h2 > span {
+    font-style: italic;
+    color: var(--text-accent);
+}
+.album{
+    display: grid;
+    grid-column: inherit;
+    grid-template-columns: 1fr 1fr;
+}
+.img1{
+    grid-column: 1;
+}
+.img2{
+    grid-column: 2;
+}
+.album img{
+    border-radius: 20px;
+    width: 660px;
+    gap: 40px;
+    flex-shrink: 1;
+    margin: 0;
+}

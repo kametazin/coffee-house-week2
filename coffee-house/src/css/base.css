@@ -98,9 +98,11 @@ a button{
 .button-icon-dark:hover{
     background-color: var(--background-container);
     color: var(--text-light);
+    transition: 500ms ease-in-out;
 }
 .button-icon-dark:hover > svg > path{
     stroke: var(--text-light);
+    transition: 500ms ease-in-out;
 }
 body {
     font-family: Inter, sans-serif;
