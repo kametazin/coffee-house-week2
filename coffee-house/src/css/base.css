@@ -24,6 +24,7 @@ h2{
     font-size: 60px;
     font-weight: 600;
     line-height: 125%;
+    color: var(--text-dark);
 }
 h3{
     font-size: 24px;
@@ -103,6 +104,18 @@ a button{
 .button-icon-dark:hover > svg > path{
     stroke: var(--text-light);
     transition: 500ms ease-in-out;
+}
+.app-store, .google-play{
+    border-radius: 100px;
+    border: 1px solid var(--border-dark);
+    width: 200px;
+    height: 64px;
+    padding: 12px 20px;
+    align-items: center;
+    background-color: var(--background-body);
+    color: var(--text-dark);
+    font-size: 10px;
+    line-height: 140%;
 }
 body {
     font-family: Inter, sans-serif;

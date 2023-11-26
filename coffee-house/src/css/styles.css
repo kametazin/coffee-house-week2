@@ -204,3 +204,46 @@ main{
 .img4:hover{
     background-size: 100%;
  }
+ .mobile-app{
+    display: flex;
+    max-width: 1360px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex: 1 0 0;
+    margin-top: 100px;
+ }
+ .mobile-container{
+    width: 630px;
+ }
+ .mobile-container h2{
+    margin-bottom: 0;
+ }
+ .mobile-container h2 > span{
+    color: var(--text-accent);
+    font-style: italic;
+ }
+ .mobile-container p{
+    color: var(--text-dark);
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+ .buttons{
+    display: flex;
+    gap: 20px;
+ }
+ .btn-txt{
+    width: 80px;
+ }
+ .btn-txt-name{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    display: block;
+ }
+ #second-btn-txt{
+    margin-left: -35px;
+ }
+ button > svg{
+    float: left;
+ }
