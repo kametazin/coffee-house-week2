@@ -130,6 +130,12 @@ main{
     border-radius: 100px;
     background: var(--border-dark);
 }
+.about{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex-direction: column;
+}
 .about h2{
     align-self: stretch;
     color: var(--text-dark);
@@ -141,19 +147,38 @@ main{
 }
 .album{
     display: grid;
-    grid-column: inherit;
     grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    grid-template-areas: "upleft upright" "downleft downright";
 }
-.img1{
-    grid-column: 1;
-}
-.img2{
-    grid-column: 2;
-}
-.album img{
+.img{
     border-radius: 20px;
     width: 660px;
-    gap: 40px;
-    flex-shrink: 1;
-    margin: 0;
+}
+.img1{
+    height: 590px;
+    background: url(/img/about-1.png),  lightgray 50% / cover no-repeat;
+    flex-shrink: 0;
+    grid-area: upleft;
+}
+.img2{
+    height: 430px;
+    background: url(/img/about-2.png), lightgray 50% / cover no-repeat;
+    grid-area: downleft;
+    margin-top: 40px;
+}
+.img3{
+    height: 430px;
+    background: url(/img/about-3.png), lightgray 50% / cover no-repeat;
+    grid-area: upright;
+}
+.img4{
+    background: url(/img/about-4.png), lightgray 50% / cover no-repeat;
+    height: 590px;
+    justify-content: center;
+    align-items: center;
+    grid-area: downright;
+    margin-top: -120px;
 }
