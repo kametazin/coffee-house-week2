@@ -464,6 +464,11 @@ main{
     height: 310px;
     border-radius: 10%;
     margin-bottom: 20px;
+    background-size: 110%;
+    transition: background-size 500ms ease-in-out;
+}
+.preview:hover img{
+    background-size: 100%;
 }
 .preview h3{
     display: flex;
