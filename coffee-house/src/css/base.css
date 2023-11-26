@@ -95,15 +95,18 @@ a button{
     border: 1px solid var(--border-dark);
     background-color: var(--background-body);
     color: var(--text-dark);
+    transition: color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
 }
 .button-icon-dark:hover{
     background-color: var(--background-container);
     color: var(--text-light);
-    transition: 500ms ease-in-out;
 }
 .button-icon-dark:hover > svg > path{
     stroke: var(--text-light);
-    transition: 500ms ease-in-out;
+}
+.button-icon-dark > svg > path{
+    transition: stroke 500ms ease-in-out;
 }
 .app-store, .google-play{
     border-radius: 100px;
