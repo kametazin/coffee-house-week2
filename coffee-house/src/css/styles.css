@@ -265,3 +265,48 @@ main{
     width: 630px;
     height: 630px;
 }
+.contact-us{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    gap: 100px;
+    align-self: stretch;
+    border-radius: 40px;
+    background: var(--background-container);
+}
+.offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.offer h2{
+    color: var(--text-light);
+    text-align: left;
+}
+.offer h2 > span{
+    font-style: italic;
+    color: var(--text-accent);
+    display: flex;
+}
+.social-buttons{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.contacts-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--text-light);
+    text-align: left;
+}
+.contacts-info ul{
+    padding-left: 0;
+}
+.contacts-info ul > li{
+    padding-bottom: 16px;
+}

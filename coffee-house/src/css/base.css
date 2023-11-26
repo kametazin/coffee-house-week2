@@ -95,17 +95,35 @@ a button{
     border: 1px solid var(--border-dark);
     background-color: var(--background-body);
     color: var(--text-dark);
-    transition: color 500ms ease-in-out;
     transition: background-color 500ms ease-in-out;
 }
 .button-icon-dark:hover{
     background-color: var(--background-container);
-    color: var(--text-light);
 }
 .button-icon-dark:hover > svg > path{
     stroke: var(--text-light);
 }
 .button-icon-dark > svg > path{
+    transition: stroke 500ms ease-in-out;
+}
+.button-icon-light{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid var(--border-light);
+    background-color: var(--background-container);
+    transition: background-color 500ms ease-in-out;
+}
+.button-icon-light:hover{
+    background-color: var(--background-body);
+}
+.button-icon-light:hover > svg > path{
+    stroke: var(--text-dark)
+}
+.button-icon-light > svg > path{
     transition: stroke 500ms ease-in-out;
 }
 .app-store, .google-play{
@@ -132,6 +150,9 @@ a{
     color: var(--text-dark);
     line-height: 150%;
     font-weight: 600;
+}
+ul{
+    list-style-type:none;
 }
 li{
     font-weight: 600;
