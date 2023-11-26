@@ -40,7 +40,6 @@ main{
     background: url(/img/img-hero.png), lightgray 50% / cover no-repeat;
     border-radius: 40px;
     display: flex;
-    max-width: 1360px;
     padding: 100px;
     flex-direction: column;
     justify-content: center;
