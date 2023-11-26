@@ -232,6 +232,20 @@ main{
     display: flex;
     gap: 20px;
  }
+ .buttons button{
+    transition: color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
+ }
+ .buttons:hover button{
+    background-color: var(--background-container);
+    color: var(--text-light);
+}
+.buttons button > svg > path{
+    transition: fill 500ms ease-in-out;
+}
+.buttons:hover button > svg > path{
+    fill: var(--text-light);
+}
  .btn-txt{
     width: 80px;
  }
