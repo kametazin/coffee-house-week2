@@ -439,3 +439,45 @@ main{
 .tab-active div{
     background: var(--background-body);
 }
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.preview{
+    display: flex;
+    height: 506px;
+    width: 310px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid var(--border-light);
+    color: var(--text-dark);
+    position: relative;
+}
+.preview img{
+    width: 310px;
+    height: 310px;
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+.preview h3{
+    display: flex;
+    float: inline-start;
+    margin: 0;
+    padding-left: 20px;
+    max-width: 270px;
+    align-self: stretch;
+}
+.preview p{
+    max-width: 270px;
+    color: var(--text-dark);
+}
+.price-preview{
+    position: absolute;
+    bottom: 15px;
+}
