@@ -459,16 +459,69 @@ main{
     color: var(--text-dark);
     position: relative;
 }
-.preview img{
+.preview-img{
     width: 310px;
     height: 310px;
     border-radius: 10%;
     margin-bottom: 20px;
-    background-size: 110%;
-    transition: background-size 500ms ease-in-out;
+    background-position: center;
+    width: 310px;
+    height: 310px;
+    background-position: center;
 }
-.preview:hover img{
+.preview:hover div{
     background-size: 100%;
+}
+.preview:hover > .preview-img{
+    transition: all 500ms ease;
+}
+.coffee-img1{
+    background: url(/img/coffee-1.jpg), lightgray 50% / cover no-repeat;
+    transition: background-size 500ms ease-in-out;
+    background-size: 110%;
+    background-position: center;
+}
+.coffee-img2{
+    background: url(/img/coffee-2.jpg), lightgray 50% / cover no-repeat;
+    transition: background-size 500ms ease-in-out;
+    background-size: 110%;
+    background-position: center;
+}
+.coffee-img3{
+    background: url(/img/coffee-3.jpg), lightgray 50% / cover no-repeat;
+    transition: background-size 500ms ease-in-out;
+    background-size: 110%;
+    background-position: center;
+}
+.coffee-img4{
+    background: url(/img/coffee-4.jpg), lightgray 50% / cover no-repeat;
+    transition: background-size 500ms ease-in-out;
+    background-size: 110%;
+    background-position: center;
+}
+.coffee-img5{
+    background: url(/img/coffee-5.jpg), lightgray 50% / cover no-repeat;
+    transition: background-size 500ms ease-in-out;
+    background-size: 110%;
+    background-position: center;
+}
+.coffee-img6{
+    background: url(/img/coffee-6.jpg), lightgray 50% / cover no-repeat;
+    transition: background-size 500ms ease-in-out;
+    background-size: 110%;
+    background-position: center;
+}
+.coffee-img7{
+    background: url(/img/coffee-7.jpg), lightgray 50% / cover no-repeat;
+    transition: background-size 500ms ease-in-out;
+    background-size: 110%;
+    background-position: center;
+}
+.coffee-img8{
+    background: url(/img/coffee-8.jpg), lightgray 50% / cover no-repeat;
+    transition: background-size 500ms ease-in-out;
+    background-size: 110%;
+    background-position: center;
 }
 .preview h3{
     display: flex;
