@@ -386,6 +386,7 @@ main{
 .quote h2{
     width: 800px;
     margin-bottom: 0;
+    margin-top: 0px;
 }
 .quote h2 > span{
     font-style: italic;
