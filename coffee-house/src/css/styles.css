@@ -355,6 +355,9 @@ main{
     transform: scaleX(0.8);
     opacity: 100%;
 }
+.link-call{
+    color: var(--text-light);
+}
 .quote{
     display: flex;
     flex-direction: column;
@@ -390,6 +393,7 @@ main{
     max-width: 130px;
     height: 46px;
     transition: all 500ms ease;
+    cursor: pointer;
 }
 .tab-item div{
     background: var(--border-light);
@@ -439,7 +443,7 @@ main{
 .tab-active div{
     background: var(--background-body);
 }
-.grid{
+.menu{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -458,6 +462,7 @@ main{
     border: 1px solid var(--border-light);
     color: var(--text-dark);
     position: relative;
+    cursor: pointer;
 }
 .preview-img{
     width: 310px;
