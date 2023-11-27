@@ -43,7 +43,7 @@ main{
     margin-top: 14px;
 }
 .enjoy{
-    background: url("./img/img-hero.png"), lightgray 50% / cover no-repeat;
+    background: url("../../docs/assets/img-hero.png"), lightgray 50% / cover no-repeat;
     border-radius: 40px;
     display: flex;
     padding: 100px;
@@ -192,7 +192,7 @@ main{
 }
 .img1{
     height: 590px;
-    background: url(./img/about-1.png),  lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/about-1.png),  lightgray 50% / cover no-repeat;
     flex-shrink: 0;
     grid-area: upleft;
     background-position: center;
@@ -205,7 +205,7 @@ main{
  }
 .img2{
     height: 430px;
-    background: url(./img/about-2.png), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/about-2.png), lightgray 50% / cover no-repeat;
     grid-area: downleft;
     margin-top: 40px;
     background-position: center;
@@ -218,7 +218,7 @@ main{
  }
 .img3{
     height: 430px;
-    background: url(./img/about-3.png), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/about-3.png), lightgray 50% / cover no-repeat;
     grid-area: upright;
     background-position: center;
     background-size: 110%;
@@ -228,7 +228,7 @@ main{
     background-size: 100%;
  }
 .img4{
-    background: url(./img/about-4.png), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/about-4.png), lightgray 50% / cover no-repeat;
     height: 590px;
     grid-area: downright;
     margin-top: -120px;
@@ -498,49 +498,49 @@ main{
     transition: all 500ms ease;
 }
 .coffee-img1{
-    background: url(./img/coffee-1.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-1.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img2{
-    background: url(./img/coffee-2.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-2.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img3{
-    background: url(./img/coffee-3.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-3.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img4{
-    background: url(./img/coffee-4.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-4.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img5{
-    background: url(./img/coffee-5.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-5.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img6{
-    background: url(./img/coffee-6.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-6.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img7{
-    background: url(./img/coffee-7.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-7.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img8{
-    background: url(./img/coffee-8.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-8.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
