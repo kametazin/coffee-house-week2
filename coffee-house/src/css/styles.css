@@ -43,7 +43,7 @@ main{
     margin-top: 14px;
 }
 .enjoy{
-    background: url("/docs/assets/img-hero.png"), lightgray 50% / cover no-repeat;
+    background: url("coffee-house/img/img-hero.png"), lightgray 50% / cover no-repeat;
     border-radius: 40px;
     display: flex;
     padding: 100px;
