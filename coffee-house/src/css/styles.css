@@ -1,13 +1,13 @@
 header{
     display: flex;
-    padding: 0px 0px 4px 0px;
+    padding: 0px 0px 13px 0px;
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
 }
 .logo{
-    width: 108px;
-    height: 68px;
+    width: 101px;
+    height: 60px;
 }
 nav{
     display: flex;
@@ -16,21 +16,21 @@ nav{
     gap: 40px;
     flex: 1 0 0;
     align-self: stretch;
+    margin-top: 7px;
 }
 main{
     margin-top: 0;
 }
 .nav{
-    display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 43px;
     flex: 1 0 0;
     align-self: stretch;
     justify-content: center;
     list-style-type: none;
-    margin-right: 0;
+    margin-right: 46px;
     margin-top: 0px;
-    padding-left: 0px;
+    width: clamp(560px, 65vw, 895px);
 }
 .nav li, header a{
     font-size: 16px;
@@ -41,9 +41,15 @@ main{
 .menu-item{
     align-self: baseline;
     margin-top: 14px;
+    margin-right: 4px;
+}
+.menu-item svg{
+    padding-left: 2px;
 }
 .enjoy{
     background: url(../../docs/assets/img-hero.png), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-size: auto;
     border-radius: 40px;
     display: flex;
     padding: 100px;
@@ -57,38 +63,24 @@ main{
 }
 .enjoy h1, p{
     color: var(--text-light);
-    width: 530px;
+    width: 565px;
+    line-height: 105%;
 }
 .enjoy h1{
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 105%
+    line-height: 105%;
+    letter-spacing: 1px;
 }
 .enjoy h1>span{
     font-style: italic;
     color: var(--text-accent);
 }
 .enjoy p{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.button-primary{
-    transition: all 500ms ease;
-}
-.button-primary svg{
-    opacity: 0;
-    position: absolute;
-    top:18px;
-    right: 75px;
-    transition: all 500ms ease;
-}
-.button-primary:hover svg{
-    opacity: 100%;
-    transition: all 500ms ease;
-}
-.button-primary:hover{
-    padding: 20px 100px;
-    justify-content: end;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-weight: 400;
+    line-height: 150%;
 }
 .favorite-coffee{
     display: flex;
@@ -105,6 +97,7 @@ main{
     line-height: 125%;
     margin-top: 100px;
     margin-bottom: 0px;
+    letter-spacing: 0.8px;
 }
 .favorite-coffee h2 > span {
     color: var(--text-accent);
@@ -129,12 +122,16 @@ main{
 }
 .slides h3{
     margin-bottom: 0;
+    margin-top: 20px;
+    letter-spacing: 0.4px;
 }
 .slides p{
     color: var(--text-dark);
     text-align: center;
-    margin-top: 16px;
+    margin-top: 20px;
     margin-bottom: 16px;
+    line-height: 130%;
+    max-width: 480px;
 }
 .slides span{
     align-self: stretch;
@@ -144,6 +141,7 @@ main{
     font-weight: 600;
     line-height: 125%;
     margin-bottom: 40px;
+    margin-top: 4px;
 }
 .slides div{
     display: flex;
@@ -172,18 +170,17 @@ main{
     align-self: stretch;
     color: var(--text-dark);
     line-height: 125%;
-    margin-top: 95px;
+    margin-top: 100px;
+    letter-spacing: 0.4px;
+    margin-bottom: 40px;
 }
 .about h2 > span {
     font-style: italic;
     color: var(--text-accent);
 }
 .album{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     flex-direction: column;
     align-items: flex-start;
-    align-self: stretch;
     grid-template-areas: "upleft upright" "downleft downright";
 }
 .img{
@@ -240,20 +237,20 @@ main{
     background-size: 100%;
  }
  .mobile-app{
-    display: flex;
     max-width: 1360px;
     justify-content: center;
     align-items: center;
     gap: 100px;
     flex: 1 0 0;
-    margin-top: 100px;
  }
  .mobile-container{
     width: 630px;
-    margin-top: -60px;
+    margin-bottom: 50px;
  }
  .mobile-container h2{
-    margin-bottom: 0;
+    max-width: 600px;
+    margin-top: 45px;
+    letter-spacing: 0.5px;
  }
  .mobile-container h2 > span{
     color: var(--text-accent);
@@ -261,8 +258,9 @@ main{
  }
  .mobile-container p{
     color: var(--text-dark);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    line-height: 135%;
  }
  .buttons{
     display: flex;
@@ -298,16 +296,15 @@ main{
     float: left;
  }
 .mobile-screens img{
-    width: 630px;
-    height: 630px;
+    max-width: 630px;
+    max-height: 630px;
+    width:90%;
+
 }
 .contact-us{
-    margin-top: 90px;
     margin-bottom: 40px;
-    display: flex;
-    padding: 50px 100px;
     align-items: center;
-    gap: 100px;
+    gap: 100px 135px;
     align-self: stretch;
     border-radius: 40px;
     background: var(--background-container);
@@ -317,10 +314,13 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 50px;
 }
 .offer h2{
     color: var(--text-light);
     text-align: left;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
 }
 .offer h2 > span{
     font-style: italic;
@@ -383,12 +383,10 @@ main{
     color: var(--text-dark);
     text-align: center;
 }
-.quote h2{
-    width: 800px;
+.quote h1{
     margin-bottom: 0;
-    margin-top: 0px;
 }
-.quote h2 > span{
+.quote h1 > span{
     font-style: italic;
     color: var(--text-accent);
 }
@@ -561,3 +559,282 @@ main{
     position: absolute;
     bottom: 15px;
 }
+.button-icon-burger {
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px; 
+    border: 1px #665F55 solid;
+}
+@media (max-width: 1430px) {
+    .img {
+        background-size: auto;
+    }
+    .quote h1 {
+        font-size: 60px;
+    }
+}
+@media (min-width: 901px) { /*DESKTOP*/
+    .album {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: stretch;
+        column-gap: 40px;
+    }
+    .img {
+        width: clamp(200px, 100%, 660px);
+    }
+    .img1, .img2 {
+        margin-right: 2.5rem;
+    }
+    .button-primary{
+        transition: all 500ms ease;
+    }
+    .button-primary svg{
+        opacity: 0;
+        position: absolute;
+        top:18px;
+        right: 75px;
+        transition: all 500ms ease;
+    }
+    .button-primary:hover svg{
+        opacity: 100%;
+        transition: all 500ms ease;
+    }
+    .button-primary:hover{
+        padding: 20px 100px;
+        justify-content: end;
+    }
+    .mobile-app {
+        display: flex;
+        margin-top: 100px;
+    }
+    .mobile-container p {
+        margin-bottom: 45px;
+    }
+    .contact-us {
+        display: flex;
+        padding: 50px 100px;
+    }
+    .button-icon-burger {
+        display: none;
+    }
+    .nav {
+        display: flex;
+    }
+    .quote h1{
+        width: 800px;
+    }
+    .restore {
+        display: none;
+    }
+    .mobile-container p {
+        margin-bottom: 39px;
+    }
+    .quote h1 {
+        margin-top: 0px;
+    }
+    .contact-us {
+        margin-top: 95px;
+    }
+  }
+
+@media (min-width: 765px) {
+    .mobile-container h2 {
+        min-width: 634px;
+    }
+    .mobile-container p {
+        min-width: 700px;
+    }
+}
+  @media (min-width: 400px) and (max-width: 900px){ /*TABLET*/
+    .img {
+        margin-right: auto;
+    }
+    .img4 {
+        margin-top: 40px;
+    }
+    .img3, .img2 {
+        display: none;
+    }
+    .mobile-container h2 {
+        margin-top: 100px;
+    }
+    .button-icon-burger {
+        float: inline-end;
+        display: inline-flex;
+        cursor: pointer;
+        margin-bottom: 7px;
+    }
+    .nav, .menu-item {
+       position: fixed;
+       top: 6rem;
+       right: -200%;
+       background-color: var(--background-body);
+       width: 100vw;
+       z-index: 2;
+       font-size: 32px;
+    }
+    .nav li > a {
+        font-size: 32px;
+        justify-content: center;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: max-content;
+    }
+    header {
+        position: relative;
+    }
+    .menu-item {
+        position: absolute;
+        margin-top: 12.8125rem;
+        padding-top: 100px;
+        padding-left: 32%;
+        padding-bottom: 100vh;
+    }
+    .enjoy {
+        padding: 60px;
+    }
+    .album {
+        align-items: center;
+    }
+    .mobile-screens img {
+        margin-top: 56px;
+        margin-left: 29px;
+        margin-bottom: 53px;
+    }
+    .contact-us{
+        padding: 56px 61px;
+        margin-top: 45px
+    }
+    .quote h1 {
+        margin-top: 4px;
+        line-height: 120%;
+        max-width: 650px;
+    }
+    .tabs {
+        padding-top: 6px;
+    }
+    .tab-item {
+        max-width: 100px;
+    }
+    .preview p {
+        line-height: 130%;
+    }
+  }
+  @media (max-width: 900px) {
+    .restore {
+        align-self: center;
+        margin: 40px 41vw 44px 41vw;;
+    }
+  }
+  @media (max-width: 800px) {
+    .preview:nth-last-child(-n + 4) {
+        display: none;
+    }
+    quote h2{
+        max-width: 600px;
+    }
+    .contacts-info {
+        margin-top: 76px;
+    }
+  }
+  @media (max-width:600px) {
+    main {
+        display: block;
+        max-width: fit-content;
+    }
+    h1 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .enjoy {
+        width: 348px;
+        height: 552px;
+        padding: 60px 16px;
+    }
+    .enjoy h1, p {
+        max-width: 300px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .img {
+        max-width: clamp(340px, 100%, 500px);
+    }
+    .album {
+        max-width: clamp(200px, 100%, 350px);
+    }
+    .slides p {
+        max-width: 348px;
+    }
+    .mobile-container h2{
+        max-width: 340px;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .contact-us {
+        padding: 30px 16px;
+    }
+    .contact-us h2{
+        font-size: 32px;
+    }
+    .tabs {
+        gap: 8px;
+        margin: auto;
+    }
+  }
+  @media (max-width:400px) { /*MOBILE*/
+    .img3, .img2 {
+        display: none;
+    }
+    .img4 {
+        margin-top: 40px;
+    }
+    .button-icon-burger {
+        float: inline-end;
+        display: inline-flex;
+        cursor: pointer;
+    }
+    .nav, .menu-item {
+       position: fixed;
+       top: 6rem;
+       right: -200%;
+       background-color: var(--background-body);
+       width: 100vw;
+       z-index: 2;
+       font-size: 32px;
+    }
+    .nav li > a {
+        font-size: 32px;
+        justify-content: center;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: max-content;
+    }
+    header {
+        position: relative;
+    }
+    .menu-item {
+        position: absolute;
+        margin-top: 12.8125rem;
+        padding-top: 100px;
+        padding-left: 41vw;
+        padding-bottom: 100vh;
+    }
+    .quote h1{
+        max-width: 340px;
+    }
+    .tabs {
+        max-width: 340px;
+    }
+    .tab-item, .tab-active {
+        max-width: 105px;
+    }
+  }
