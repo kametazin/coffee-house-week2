@@ -812,6 +812,7 @@ main{
         float: inline-end;
         display: inline-flex;
         cursor: pointer;
+        margin-top: -6px;
     }
     .nav, .menu-item {
        position: fixed;
