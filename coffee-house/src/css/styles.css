@@ -891,18 +891,31 @@ main{
     }
     .offer h2{
         margin-top: 30px;
+        letter-spacing: 0.2px;
+        width: 390px;
+    }
+    .offer h2 > span {
+        display: inline;
     }
     .offer {
         margin-bottom: 17px;
+        width: 390px;
     }
     .contacts-info {
         margin-top: 0;
+        margin-bottom: 4px;
     }
     .contacts-info ul > li > svg {
         margin-right: 4px;
     }
     .contacts-info ul > li {
         margin-bottom: 14px;
+    }
+    .contacts-info h3 {
+        letter-spacing: 0.4px;
+    }
+    .contacts-info ul > li > a {
+        letter-spacing: 0.5px;
     }
     .quote h1 {
         font-size: 32px;
