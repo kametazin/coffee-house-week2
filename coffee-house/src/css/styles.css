@@ -550,6 +550,17 @@ main{
     header {
         padding: 0px 0px 15px 0px;
     }
+    .enjoy p {
+        margin-top: 40px;
+        margin-bottom: 45px;
+    }
+    .button-primary {
+        margin-top: -5px;
+        padding: 24px 78px;
+    }
+    .favorite-coffee h2 {
+        margin-top: 97px;
+    }
     .album {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -666,13 +677,6 @@ main{
         justify-content: end;
     }
   }
-
-@media (min-width: 400px) {
-    .enjoy p {
-        margin-top: 45px;
-        margin-bottom: 45px;
-    }
-}
   @media (min-width: 400px) and (max-width: 900px){ /*TABLET*/
     .img {
         margin-right: auto;
