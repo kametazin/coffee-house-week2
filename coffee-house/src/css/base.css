@@ -184,4 +184,13 @@ a button{
     main {
       display: flex;
     }
+    body {
+        margin: 20px 5px;
+    }
+  }
+  @media screen and (min-width: 600px){
+    body {
+        margin: 20px auto 40px auto;
+        padding: 0 40px;
+    }
   }
