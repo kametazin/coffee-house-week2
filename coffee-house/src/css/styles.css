@@ -673,7 +673,7 @@ main{
         transition: all 500ms ease;
     }
     .button-primary:hover{
-        padding: 20px 100px;
+        padding: 24px 100px;
         justify-content: end;
     }
   }
