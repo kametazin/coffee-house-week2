@@ -1,13 +1,13 @@
 header{
     display: flex;
-    padding: 0px 0px 4px 0px;
+    padding: 0px 0px 13px 0px;
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
 }
 .logo{
-    width: 108px;
-    height: 68px;
+    width: 101px;
+    height: 60px;
 }
 nav{
     display: flex;
@@ -16,21 +16,21 @@ nav{
     gap: 40px;
     flex: 1 0 0;
     align-self: stretch;
+    margin-top: 7px;
 }
 main{
     margin-top: 0;
 }
 .nav{
-    display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 43px;
     flex: 1 0 0;
     align-self: stretch;
     justify-content: center;
     list-style-type: none;
-    margin-right: 0;
+    margin-right: 46px;
     margin-top: 0px;
-    padding-left: 0px;
+    width: clamp(560px, 65vw, 895px);
 }
 .nav li, header a{
     font-size: 16px;
@@ -41,9 +41,15 @@ main{
 .menu-item{
     align-self: baseline;
     margin-top: 14px;
+    margin-right: 4px;
+}
+.menu-item svg{
+    padding-left: 2px;
 }
 .enjoy{
-    background: url("/docs/assets/img-hero.png"), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/img-hero.png), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-size: auto;
     border-radius: 40px;
     display: flex;
     padding: 100px;
@@ -57,38 +63,22 @@ main{
 }
 .enjoy h1, p{
     color: var(--text-light);
-    width: 530px;
+    width: 565px;
+    line-height: 105%;
 }
 .enjoy h1{
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 105%
+    line-height: 105%;
+    letter-spacing: 1px;
 }
 .enjoy h1>span{
     font-style: italic;
     color: var(--text-accent);
 }
 .enjoy p{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.button-primary{
-    transition: all 500ms ease;
-}
-.button-primary svg{
-    opacity: 0;
-    position: absolute;
-    top:18px;
-    right: 75px;
-    transition: all 500ms ease;
-}
-.button-primary:hover svg{
-    opacity: 100%;
-    transition: all 500ms ease;
-}
-.button-primary:hover{
-    padding: 20px 100px;
-    justify-content: end;
+    font-weight: 400;
+    line-height: 150%;
 }
 .favorite-coffee{
     display: flex;
@@ -105,6 +95,7 @@ main{
     line-height: 125%;
     margin-top: 100px;
     margin-bottom: 0px;
+    letter-spacing: 0.8px;
 }
 .favorite-coffee h2 > span {
     color: var(--text-accent);
@@ -129,12 +120,16 @@ main{
 }
 .slides h3{
     margin-bottom: 0;
+    margin-top: 20px;
+    letter-spacing: 0.4px;
 }
 .slides p{
     color: var(--text-dark);
     text-align: center;
-    margin-top: 16px;
+    margin-top: 20px;
     margin-bottom: 16px;
+    line-height: 130%;
+    max-width: 480px;
 }
 .slides span{
     align-self: stretch;
@@ -144,6 +139,7 @@ main{
     font-weight: 600;
     line-height: 125%;
     margin-bottom: 40px;
+    margin-top: 4px;
 }
 .slides div{
     display: flex;
@@ -172,18 +168,17 @@ main{
     align-self: stretch;
     color: var(--text-dark);
     line-height: 125%;
-    margin-top: 95px;
+    margin-top: 100px;
+    letter-spacing: 0.4px;
+    margin-bottom: 40px;
 }
 .about h2 > span {
     font-style: italic;
     color: var(--text-accent);
 }
 .album{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     flex-direction: column;
     align-items: flex-start;
-    align-self: stretch;
     grid-template-areas: "upleft upright" "downleft downright";
 }
 .img{
@@ -192,7 +187,7 @@ main{
 }
 .img1{
     height: 590px;
-    background: url(/img/about-1.png),  lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/about-1.png),  lightgray 50% / cover no-repeat;
     flex-shrink: 0;
     grid-area: upleft;
     background-position: center;
@@ -205,7 +200,7 @@ main{
  }
 .img2{
     height: 430px;
-    background: url(/img/about-2.png), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/about-2.png), lightgray 50% / cover no-repeat;
     grid-area: downleft;
     margin-top: 40px;
     background-position: center;
@@ -218,7 +213,7 @@ main{
  }
 .img3{
     height: 430px;
-    background: url(/img/about-3.png), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/about-3.png), lightgray 50% / cover no-repeat;
     grid-area: upright;
     background-position: center;
     background-size: 110%;
@@ -228,7 +223,7 @@ main{
     background-size: 100%;
  }
 .img4{
-    background: url(/img/about-4.png), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/about-4.png), lightgray 50% / cover no-repeat;
     height: 590px;
     grid-area: downright;
     margin-top: -120px;
@@ -240,20 +235,20 @@ main{
     background-size: 100%;
  }
  .mobile-app{
-    display: flex;
     max-width: 1360px;
     justify-content: center;
     align-items: center;
     gap: 100px;
     flex: 1 0 0;
-    margin-top: 100px;
  }
  .mobile-container{
     width: 630px;
-    margin-top: -60px;
+    margin-bottom: 50px;
  }
  .mobile-container h2{
-    margin-bottom: 0;
+    max-width: 600px;
+    margin-top: 45px;
+    letter-spacing: 0.5px;
  }
  .mobile-container h2 > span{
     color: var(--text-accent);
@@ -261,8 +256,9 @@ main{
  }
  .mobile-container p{
     color: var(--text-dark);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    line-height: 135%;
  }
  .buttons{
     display: flex;
@@ -298,16 +294,15 @@ main{
     float: left;
  }
 .mobile-screens img{
-    width: 630px;
-    height: 630px;
+    max-width: 630px;
+    max-height: 630px;
+    width:90%;
+
 }
 .contact-us{
-    margin-top: 90px;
     margin-bottom: 40px;
-    display: flex;
-    padding: 50px 100px;
     align-items: center;
-    gap: 100px;
+    gap: 100px 135px;
     align-self: stretch;
     border-radius: 40px;
     background: var(--background-container);
@@ -317,10 +312,13 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 50px;
 }
 .offer h2{
     color: var(--text-light);
     text-align: left;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
 }
 .offer h2 > span{
     font-style: italic;
@@ -383,12 +381,10 @@ main{
     color: var(--text-dark);
     text-align: center;
 }
-.quote h2{
-    width: 800px;
+.quote h1{
     margin-bottom: 0;
-    margin-top: 0px;
 }
-.quote h2 > span{
+.quote h1 > span{
     font-style: italic;
     color: var(--text-accent);
 }
@@ -498,49 +494,49 @@ main{
     transition: all 500ms ease;
 }
 .coffee-img1{
-    background: url(/img/coffee-1.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-1.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img2{
-    background: url(/img/coffee-2.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-2.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img3{
-    background: url(/img/coffee-3.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-3.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img4{
-    background: url(/img/coffee-4.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-4.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img5{
-    background: url(/img/coffee-5.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-5.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img6{
-    background: url(/img/coffee-6.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-6.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img7{
-    background: url(/img/coffee-7.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-7.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
 }
 .coffee-img8{
-    background: url(/img/coffee-8.jpg), lightgray 50% / cover no-repeat;
+    background: url(../../docs/assets/coffee-8.jpg), lightgray 50% / cover no-repeat;
     transition: background-size 500ms ease-in-out;
     background-size: 110%;
     background-position: center;
@@ -561,3 +557,379 @@ main{
     position: absolute;
     bottom: 15px;
 }
+.button-icon-burger {
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px; 
+    border: 1px #665F55 solid;
+}
+@media (max-width: 1430px) {
+    .img {
+        background-size: auto;
+    }
+    .quote h1 {
+        font-size: 60px;
+    }
+}
+@media (min-width: 901px) { /*DESKTOP*/
+    .album {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: stretch;
+        column-gap: 40px;
+    }
+    .img {
+        width: clamp(200px, 100%, 660px);
+    }
+    .img1, .img2 {
+        margin-right: 2.5rem;
+    }
+    .button-primary{
+        transition: all 500ms ease;
+    }
+    .button-primary svg{
+        opacity: 0;
+        position: absolute;
+        top:18px;
+        right: 75px;
+        transition: all 500ms ease;
+    }
+    .button-primary:hover svg{
+        opacity: 100%;
+        transition: all 500ms ease;
+    }
+    .button-primary:hover{
+        padding: 20px 100px;
+        justify-content: end;
+    }
+    .mobile-app {
+        display: flex;
+        margin-top: 100px;
+    }
+    .mobile-container p {
+        margin-bottom: 45px;
+    }
+    .contact-us {
+        display: flex;
+        padding: 50px 100px;
+    }
+    .button-icon-burger {
+        display: none;
+    }
+    .nav {
+        display: flex;
+    }
+    .quote h1{
+        width: 800px;
+    }
+    .restore {
+        display: none;
+    }
+    .mobile-container p {
+        margin-bottom: 39px;
+    }
+    .quote h1 {
+        margin-top: 0px;
+    }
+    .contact-us {
+        margin-top: 95px;
+    }
+  }
+
+@media (min-width: 765px) {
+    .mobile-container h2 {
+        min-width: 634px;
+    }
+    .mobile-container p {
+        min-width: 700px;
+    }
+}
+@media (min-width: 400px) {
+    .enjoy p {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+}
+  @media (min-width: 400px) and (max-width: 900px){ /*TABLET*/
+    .img {
+        margin-right: auto;
+    }
+    .img4 {
+        margin-top: 40px;
+    }
+    .img3, .img2 {
+        display: none;
+    }
+    .mobile-container h2 {
+        margin-top: 100px;
+    }
+    .button-icon-burger {
+        float: inline-end;
+        display: inline-flex;
+        cursor: pointer;
+        margin-bottom: 7px;
+    }
+    .nav, .menu-item {
+       position: fixed;
+       top: 6rem;
+       right: -200%;
+       background-color: var(--background-body);
+       width: 100vw;
+       z-index: 2;
+       font-size: 32px;
+    }
+    .nav li > a {
+        font-size: 32px;
+        justify-content: center;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: max-content;
+    }
+    header {
+        position: relative;
+    }
+    .menu-item {
+        position: absolute;
+        margin-top: 12.8125rem;
+        padding-top: 100px;
+        padding-left: 32%;
+        padding-bottom: 100vh;
+    }
+    .enjoy {
+        padding: 60px;
+    }
+    .album {
+        align-items: center;
+    }
+    .mobile-screens img {
+        margin-top: 56px;
+        margin-left: 29px;
+        margin-bottom: 53px;
+    }
+    .contact-us{
+        padding: 56px 61px;
+        margin-top: 45px
+    }
+    .quote h1 {
+        margin-top: 4px;
+        line-height: 120%;
+        max-width: 650px;
+    }
+    .tabs {
+        padding-top: 6px;
+    }
+    .tab-item {
+        max-width: 100px;
+    }
+    .preview p {
+        line-height: 130%;
+    }
+  }
+  @media (max-width: 900px) {
+    .restore {
+        align-self: center;
+        margin: 40px 41vw 44px 41vw;;
+    }
+  }
+  @media (max-width: 800px) {
+    .preview:nth-last-child(-n + 4) {
+        display: none;
+    }
+    quote h2{
+        max-width: 600px;
+    }
+    .contacts-info {
+        margin-top: 76px;
+    }
+  }
+  @media (max-width:600px) {
+    main {
+        display: block;
+        max-width: fit-content;
+    }
+    h1 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .enjoy {
+        width: 348px;
+        height: 552px;
+        padding: 60px 16px;
+    }
+    .enjoy p {
+        max-width: 318px;
+    }
+    .enjoy h1 {
+        max-width: 312px;
+        line-height: 115%;
+        padding-top: 10px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .img {
+        max-width: clamp(340px, 100%, 500px);
+    }
+    .album {
+        max-width: clamp(200px, 100%, 350px);
+    }
+    .slides p {
+        max-width: 348px;
+    }
+    .mobile-container h2{
+        max-width: 340px;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .contact-us {
+        padding: 30px 16px;
+    }
+    .contact-us h2{
+        font-size: 32px;
+    }
+    .tabs {
+        gap: 8px;
+        margin: auto;
+    }
+  }
+  @media (max-width:400px) { /*MOBILE*/
+    body {
+        margin: 20px 16px;
+    }
+    .img3, .img2 {
+        display: none;
+    }
+    .img4 {
+        margin-top: 40px;
+    }
+    .button-icon-burger {
+        float: inline-end;
+        display: inline-flex;
+        cursor: pointer;
+        margin-top: -6px;
+    }
+    .nav, .menu-item {
+       position: fixed;
+       top: 6rem;
+       right: -200%;
+       background-color: var(--background-body);
+       width: 100vw;
+       z-index: 2;
+       font-size: 32px;
+    }
+    .nav li > a {
+        font-size: 32px;
+        justify-content: center;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: max-content;
+    }
+    header {
+        position: relative;
+    }
+    .menu-item {
+        position: absolute;
+        margin-top: 12.8125rem;
+        padding-top: 100px;
+        padding-left: 41vw;
+        padding-bottom: 100vh;
+    }
+    .quote h1{
+        max-width: 340px;
+    }
+    .tabs {
+        max-width: 340px;
+    }
+    .tab-item, .tab-active {
+        max-width: 105px;
+    }
+    .enjoy h1 {
+        margin-top: -10px;
+        letter-spacing: 0.5px;
+    }
+    .enjoy p {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .favorite-coffee h2 {
+        letter-spacing: 0.3px;
+    }
+    .slides img {
+        width: 349px;
+    }
+    .slides p {
+        line-height: 150%;
+        margin-top: 17px;
+        margin-bottom: 11px;
+    }
+    .mobile-container {
+        margin-bottom: 40px;
+    }
+    .mobile-container h2 {
+        margin-top: 100px;
+        max-width: 354px;
+        letter-spacing: 0.4px;
+    }
+    .mobile-container p {
+        margin-top: 40px;
+        max-width: 354px;
+        line-height: 150%;
+        margin-bottom: 40px;
+    }
+    .mobile-screens img {
+        width: 100%;
+    }
+    .mobile-screens {
+        margin-bottom: 95px;
+    }
+    .offer h2{
+        margin-top: 30px;
+        letter-spacing: 0.2px;
+        width: 390px;
+    }
+    .offer h2 > span {
+        display: inline;
+    }
+    .offer {
+        margin-bottom: 17px;
+        width: 390px;
+    }
+    .contacts-info {
+        margin-top: 0;
+        margin-bottom: 4px;
+    }
+    .contacts-info ul > li > svg {
+        margin-right: 4px;
+    }
+    .contacts-info ul > li {
+        margin-bottom: 14px;
+    }
+    .contacts-info h3 {
+        letter-spacing: 0.4px;
+    }
+    .contacts-info ul > li > a {
+        letter-spacing: 0.5px;
+    }
+    .quote h1 {
+        font-size: 32px;
+        margin-top: 2px;
+        line-height: 125%;
+    }
+    .preview p {
+        line-height: 150%;
+        margin-top: 10px;
+    }
+    .price-preview {
+        bottom: 20px;
+    }
+    .restore {
+        margin: 40px 38vw 95px;
+    }
+  }

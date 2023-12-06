@@ -19,9 +19,10 @@ html{
 body {
     font-family: Inter, sans-serif;
     background-color: var(--background-body);
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 20px;
+    margin: 20px 40px 40px 40px;
+    max-width: clamp(320px, 100vw, 1440px);
+    align-items: stretch;
+    overflow-x:hidden;
 }
 a{
     text-decoration: none;
@@ -38,7 +39,7 @@ li{
 h1{
     font-size: 72px;
     font-weight: 600;
-    line-height: 105%;
+    line-height: 110%;
 }
 h2{
     font-size: 60px;
@@ -97,7 +98,7 @@ a button{
 }
 .button-primary{
     display: flex;
-    width: 200px;
+    max-width: 200px;
     padding: 20px 78px;
     justify-content: center;
     align-items: center;
@@ -138,6 +139,7 @@ a button{
     background-color: var(--background-body);
     color: var(--text-dark);
     transition: background-color 500ms ease-in-out;
+    cursor: pointer;
 }
 .button-icon-dark:hover{
     background-color: var(--background-container);
@@ -158,6 +160,7 @@ a button{
     border: 1px solid var(--border-light);
     background-color: var(--background-container);
     transition: background-color 500ms ease-in-out;
+    cursor: pointer;
 }
 .button-icon-light:hover{
     background-color: var(--background-body);
@@ -179,6 +182,7 @@ a button{
     color: var(--text-dark);
     font-size: 10px;
     line-height: 140%;
+    cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
     main {
