@@ -587,6 +587,7 @@ main{
     .contact-us {
         display: flex;
         padding: 50px 100px;
+        margin-top: 95px;
     }
     .button-icon-burger {
         display: none;
@@ -609,9 +610,6 @@ main{
         line-height: 120%;
         letter-spacing: 0.7px;
         width: 800px;
-    }
-    .contact-us {
-        margin-top: 95px;
     }
     .contacts-info {
         padding-left: 2px;
@@ -688,9 +686,15 @@ main{
     .mobile-container h2 {
         margin-top: 100px;
         min-width: 634px;
+        margin-bottom: 40px;
     }
     .mobile-container p {
         min-width: 700px;
+        line-height: 150%;
+        margin-bottom: 40px;
+    }
+    .mobile-screens img {
+        width: 100%;
     }
     .button-icon-burger {
         float: inline-end;
@@ -728,17 +732,28 @@ main{
     .enjoy {
         padding: 60px;
     }
+    .enjoy p {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .img {
+        width: 690px;
+    }
     .album {
         align-items: center;
     }
     .mobile-screens img {
-        margin-top: 56px;
+        margin-top: 50px;
         margin-left: 29px;
-        margin-bottom: 53px;
+        margin-bottom: 50px;
     }
     .contact-us{
-        padding: 56px 61px;
+        padding: 50px 61px;
         margin-top: 45px
+    }
+    .contacts-info ul {
+        margin-top: 14px;
+        margin-bottom: 36px;
     }
     .quote h1 {
         margin-top: 4px;
@@ -748,17 +763,26 @@ main{
     .tabs {
         padding-top: 6px;
     }
+    .tab-active {
+        max-width: 110px;
+    }
     .tab-item {
         max-width: 100px;
     }
     .preview p {
-        line-height: 130%;
+        line-height: 150%;
+        margin-top: 5px;
+    }
+    .preview h3 {
+        margin-bottom: 5px;
+    }
+    .restore {
+        margin: 40px 41vw 51px 41vw;
     }
   }
   @media (max-width: 900px) {
     .restore {
         align-self: center;
-        margin: 40px 41vw 44px 41vw;;
     }
   }
   @media (max-width: 800px) {
@@ -823,6 +847,9 @@ main{
     .tabs {
         gap: 8px;
         margin: auto;
+    }
+    .restore {
+        margin: 40px 41vw 44px 41vw;
     }
   }
   @media (max-width:400px) { /*MOBILE*/
