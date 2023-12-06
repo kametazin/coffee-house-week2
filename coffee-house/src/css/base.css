@@ -123,10 +123,6 @@ a button{
     border: 1px solid var(--border-dark);
     color: var(--text-dark);
 }
-.button-secondary:hover{
-    background-color: var(--background-container);
-    color: var(--text-light);
-}
 .button-icon-dark{
     display: flex;
     width: 60px;
@@ -140,12 +136,6 @@ a button{
     color: var(--text-dark);
     transition: background-color 500ms ease-in-out;
     cursor: pointer;
-}
-.button-icon-dark:hover{
-    background-color: var(--background-container);
-}
-.button-icon-dark:hover > svg > path{
-    stroke: var(--text-light);
 }
 .button-icon-dark > svg > path{
     transition: stroke 500ms ease-in-out;
@@ -161,12 +151,6 @@ a button{
     background-color: var(--background-container);
     transition: background-color 500ms ease-in-out;
     cursor: pointer;
-}
-.button-icon-light:hover{
-    background-color: var(--background-body);
-}
-.button-icon-light:hover > svg > path{
-    stroke: var(--text-dark)
 }
 .button-icon-light > svg > path{
     transition: stroke 500ms ease-in-out;
@@ -196,5 +180,23 @@ a button{
     body {
         margin: 20px auto 40px auto;
         padding: 0 40px;
+    }
+  }
+  @media (min-width: 901px) {
+    .button-secondary:hover{
+        background-color: var(--background-container);
+        color: var(--text-light);
+    }
+    .button-icon-dark:hover{
+        background-color: var(--background-container);
+    }
+    .button-icon-dark:hover > svg > path{
+        stroke: var(--text-light);
+    }
+    .button-icon-light:hover{
+        background-color: var(--background-body);
+    }
+    .button-icon-light:hover > svg > path{
+        stroke: var(--text-dark)
     }
   }

@@ -268,16 +268,6 @@ main{
     transition: color 500ms ease-in-out;
     transition: background-color 500ms ease-in-out;
  }
- .buttons button:hover{
-    background-color: var(--background-container);
-    color: var(--text-light);
-}
-.buttons button > svg > path{
-    transition: fill 500ms ease-in-out;
-}
-.buttons button:hover > svg > path{
-    fill: var(--text-light);
-}
  .btn-txt{
     width: 80px;
  }
@@ -348,10 +338,6 @@ main{
     position: relative;
     padding-bottom: 3px;
 }
-.light-hover-line:hover{
-    color: var(--text-light);
-    opacity: 100%;
-}
 .light-hover-line:before{
     content: "";
     position: absolute;
@@ -364,10 +350,6 @@ main{
     transform: scaleX(0);
     transition: all 0.5s ease;
     opacity: 0%;
-}
-.light-hover-line:hover::before{
-    transform: scaleX(0.8);
-    opacity: 100%;
 }
 .link-call{
     color: var(--text-light);
@@ -416,15 +398,6 @@ main{
     color:var(--text-dark);
     font-weight: 600;
     transition: all 500ms ease;
-}
-.tab-item:hover {
-    background: var(--background-container);
-}
-.tab-item:hover div{
-    background: var(--background-body);
-}
-.tab-item:hover p{
-    color: var(--text-light);
 }
 .tab-active{
     display: flex;
@@ -599,14 +572,6 @@ main{
         right: 75px;
         transition: all 500ms ease;
     }
-    .button-primary:hover svg{
-        opacity: 100%;
-        transition: all 500ms ease;
-    }
-    .button-primary:hover{
-        padding: 20px 100px;
-        justify-content: end;
-    }
     .mobile-app {
         display: flex;
         margin-top: 99px;
@@ -666,6 +631,41 @@ main{
     }
     .menu {
         margin-bottom: 100px;
+    }
+    .buttons button:hover{
+        background-color: var(--background-container);
+        color: var(--text-light);
+    }
+    .buttons button > svg > path{
+        transition: fill 500ms ease-in-out;
+    }
+    .buttons button:hover > svg > path{
+        fill: var(--text-light);
+    }
+    .light-hover-line:hover{
+        color: var(--text-light);
+        opacity: 100%;
+    }
+    .light-hover-line:hover::before{
+        transform: scaleX(0.8);
+        opacity: 100%;
+    }
+    .tab-item:hover {
+        background: var(--background-container);
+    }
+    .tab-item:hover div{
+        background: var(--background-body);
+    }
+    .tab-item:hover p{
+        color: var(--text-light);
+    }
+    .button-primary:hover svg{
+        opacity: 100%;
+        transition: all 500ms ease;
+    }
+    .button-primary:hover{
+        padding: 20px 100px;
+        justify-content: end;
     }
   }
 
